@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Parent{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border: 10px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 540px;
+    height: 650px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(255, 100, 0, 0.4) 5px 5px;
+}
+#inputExpression{
+    width: 500px;
+    height: 100px;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    border: solid black 5px;
+    background-color: rgba(25, 255, 25,0.2);
+}
+#inputExpression:hover{
+    background-color: rgba(25, 255, 25,0.3);
+}
+#buttonPenal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    gap: 5px;
+}
+button{
+font-size: 2em;
+width: 90px;
+height: 90px;
+font-weight: bold;
+background-color: rgba(0, 0, 0);
+color: white;
+}
+.operator{
+    background-color:rgb(60, 213, 203,0.7);
+    color: black;
+    border: black 3px groove;
+}
+
+button:hover{
+        background-color: rgba(255, 140, 0, 0.6);
+        border-radius: 10px;
+        transition: all ease-in-out 0.25s 0s;
+    }
+button:active{
+        background-color: rgba(255, 140, 0, 0.8);
+        border-radius: 10px;
+    }
+
+@media screen and (max-width:560px) {
+    #Parent{
+        margin-top: 25px;
+        border: 5px solid rgba(0, 0, 0, 0.8);
+        padding: 5px;
+        width: 270px;
+        height: 325px;
+        gap: 10px;
+    }
+    #inputExpression{
+        font-size: 1em;
+        width: 250px;
+        height: 50px;
+        border: solid black 2.5px;
+    }
+    #buttonPenal{
+        width: 250px;
+        height: 250px;
+        gap: 2.5px;
+    }
+    button{
+    font-size: 1em;
+    width: 45px;
+    height: 45px;
+    }
+    
+    
+}
