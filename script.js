@@ -43,7 +43,7 @@ function calculate(event) {
         expr= eval(expr);
         display.textContent=expr;
     } catch (error) {
-        display.textContent="invalid expression , you are an idiot!";
+        display.textContent="invalid expression! clear and try again.";
         expr="";
         
     }
